@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="main-container">
+    <div class="img-bg">
+      <div class="main-img-container">
+        <img class="front-card-img" src="/images/bg-card-front.png" alt="">
+        <div class="front-card">
+          <img src="/images/card-logo.svg" alt="">
+          <br>
+          <br>
+          <p>0000 0000 0000 0000</p>
+          <div class="card-name">
+            <p>Charles Mambo</p>
+            <p>06/28</p>
+          </div>
+        </div>
+        <img class="back-card" src="/images/bg-card-back.png" alt="">
+      </div>
+    </div>
+
+    <div class="form">
+      <form>
+        
+        <div class="form-control">
+          <label for="Cardholder">Cardholder Name</label>
+          <input type="text" name="cardholder_name" id=""
+          placeholder="e.g. Charles Mambo">
+        </div>
+
+        <div class="form-control">
+          <label for="Card number">Card Number</label>
+          <input type="number" name="number" id=""
+          placeholder="e.g. 1234 5678 9123 0000">
+          <p class="error-text">Wrong format, numbers only</p>
+        </div>
+
+        <div class="date-container">
+          <div class="form-control date">
+            <label for="">Exp. Date</label>
+            <input type="number" name="number" id=""
+            placeholder="MM">
+            <p class="error-text">Can`t be blank</p>
+          </div>
+          <div class="form-control date">
+            <label for="month">(MM/YY)</label>
+            <input type="number" name="number" id=""
+            placeholder="YY">
+            <p class="error-text">Can`t be blank</p>
+          </div>
+          <div class="form-control cvc">
+            <label for="cvc">cvc</label>
+            <input type="number" name="number" id=""
+            placeholder="e.g. 123">
+            <p class="error-text">Can`t be blank</p>
+          </div>
+        </div>
+       
+
+        <div class="btn">
+          <button type="submit">Confirm</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="complete">
+      <img src="/images/icon-complete.svg" alt="">
+      <h3>Thank you!</h3>
+      <p>We've added your card details</p>
+      <br>
+      <div class="btn complete-btn">
+        <button type="submit">Continue</button>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

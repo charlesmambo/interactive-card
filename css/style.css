@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none; 
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    background-color: #f5f7f81a;
+}
+
+.img-bg {
+    background: linear-gradient(hsl(278, 68%, 11%), hsl(278, 20%, 49%),  hsl(249, 99%, 64%), hsl(278, 94%, 30%)); 
+    width: 28vw;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    position: relative;
+}
+
+.main-img-container {
+    width: 22vw;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%); 
+}
+.main-img-container img {
+    width: 100%;
+}
+
+.back-card {
+    position: relative;
+    left: 24%;  
+    top:10px;
+}
+.front-card img {
+    width: 3vw;
+}
+.front-card p {
+    color: hsl(270, 3%, 87%) ;
+    font-size: 1.2rem;
+}
+
+.card-name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.card-name p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.front-card-img {
+    position: relative;
+}
+
+.front-card {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 78%;
+}
+
+/* form style */
+form {
+    gap: 1.1rem;
+}
+.form {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1.2rem;
+    width: 26vw;
+}
+
+form,
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+.form-control {
+    gap: 0.3rem;
+}
+
+.form-control label {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-control input,
+.btn button {
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.2rem;
+    font-family: inherit;
+}
+
+.form-control input {
+    font-family: inherit;
+    outline: none;
+    border: 1.3px solid hsl(270, 3%, 87%);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+}
+.form-control input.invalid {
+    border: 1.3px solid  hsl(0, 100%, 66%); ;
+}
+
+.form-control input::placeholder{
+    font-size: 0.73rem;
+    font-weight: 500;
+}
+
+.btn button {
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%) ;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.1s ease-in-out;
+}
+
+.btn button:hover{
+    background: linear-gradient(hsl(249, 46%, 17%), hsl(278, 94%, 30%));
+}
+
+.date-container {
+    display: flex;
+    gap: 0.6rem;
+    overflow: hidden;
+}
+
+.date {
+    width: 80px;
+}
+.cvc {
+    width:112px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; 
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .error-text {
+   color: hsl(0, 100%, 66%); 
+   font-size: 0.7rem;
+   /* display: none; */
+  }
+
+  .complete {
+    width: 23vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1.5rem 0.6rem;
+    border-radius: 0.1rem;
+    display: none;
+  }
+  .complete img {
+    width: 2rem;
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+  .complete p {
+    color: hsl(0, 0%, 41%) ;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+
+  .complete-btn button {
+    width: 16vw;
+  }
