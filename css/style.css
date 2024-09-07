@@ -19,21 +19,21 @@ body {
     background: linear-gradient(hsl(278, 68%, 11%), hsl(278, 20%, 49%),  hsl(249, 99%, 64%), hsl(278, 94%, 30%)); 
     width: 28vw;
     height: 100vh;
+    position: relative;
 }
 
 .main-container {
     display: flex;
     align-items: center;
-    gap: 12rem;
-    position: relative;
+    gap: 12rem; 
 }
 
 .main-img-container {
-    width: 22vw;
+    width: 23vw;
     position: absolute;
     position: absolute;
     top: 50%;
-    left: 21%;
+    left: 80%;
     transform: translate(-50%, -50%); 
 }
 .main-img-container img {
@@ -131,11 +131,10 @@ form,
     color: hsl(270, 3%, 87%) ;
     cursor: pointer;
     width: 100%;
-    transition: background 0.1s ease-in-out;
+    transition: background 0.5s ease-in-out;
 }
-
-.btn button:hover{
-    background: linear-gradient(hsl(249, 46%, 17%), hsl(278, 94%, 30%));
+.btn button:hover {
+    background-color: hsl(272, 82%, 36%);
 }
 
 .date-container {
@@ -163,7 +162,7 @@ input[type=number] {
   .error-text {
    color: hsl(0, 100%, 66%); 
    font-size: 0.7rem;
-   /* display: none; */
+   display: none;
   }
 
   .complete {
@@ -190,4 +189,95 @@ input[type=number] {
 
   .complete-btn button {
     width: 16vw;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .main-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem; 
+    }
+
+    .img-bg {
+        width: 100% !important;
+        height:35vh;
+        position: relative;
+    }
+
+    .main-img-container {
+        width: 68vw;
+        position: absolute;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .main-img-container img {
+        width: 100%;
+    }
+    
+    .back-card {
+        position: relative;
+        left: 14%;  
+        top:0px;
+    }
+    .front-card img {
+        width: 3vw;
+    }
+    .front-card p {
+        color: hsl(270, 3%, 87%) ;
+        font-size: 1rem;
+    }
+    
+    .card-name {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.6rem;
+    }
+    
+    .card-name p{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+    .front-card-img {
+        position: relative;
+        position: absolute;
+        top: 110%;
+        left: 0%;
+    }
+    
+    .front-card {
+        position: absolute;
+        top: 157%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 78%;
+    }
+    .front-card img {
+        width: 6vw;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .date {
+        width: 22vw;
+    }
+    .cvc {
+        width:30vw;
+    }
+    
+  .complete {
+    width: 88vw;
+  }
+  .complete-btn button {
+    width: 68vw;
+  }
+  .complete p {
+    font-size: 1rem;
+  }
   }
