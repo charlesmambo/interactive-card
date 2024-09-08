@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const expmonthEl = document.querySelector('#exp_month');
     const cvcEl = document.querySelector('#cvc');
     const completeEl = document.querySelector('.complete');
-    const  carderrormessageEl = document.getElementById('card-error-message');
-    console.log(carderrormessageEl)
+    const carderrormessageEl = document.getElementById('card-error-message');
+    const formcontainerEl = document.querySelector('.form');
+    const completebtnEl = document.getElementById('complete');
 
     // CARD NUMBER VALIDATION
     cardnumberEl.addEventListener('input', (e) => {
@@ -46,8 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cardnumberEl.style.border = '1px solid red';
             alert("Card number must be exactly 14 digits and contain only numbers");
             hasError = true;
-            carderrormessageEl.style.display ='block'
-            // experrortextEl.style.display ='block'
+            carderrormessageEl.style.display ='block';
         } else {
             cardnumberEl.style.border = '1px solid green';
         }
@@ -98,6 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
             expdateEl.style.border = '';
             expmonthEl.style.border = '';
             cvcEl.style.border = '';
+
+            // Hide the form and show the complete message
+            formcontainerEl.style.display = 'none'; // Hide the form
+            completeEl.style.display = 'block'; // Show the complete message
         }
     });
+
+    completebtnEl.addEventListener('click', () =>{
+        completeEl.style.display = 'none';
+        formcontainerEl.style.display = 'block';
+    })
 });
+
+
