@@ -31,33 +31,33 @@
         
         <div class="form-control">
           <label for="Cardholder">Cardholder Name</label>
-          <input type="text" name="cardholder_name" id=""
-          placeholder="e.g. Charles Mambo">
+          <input type="text" name="cardholder_name" id="user_name"
+          placeholder="e.g. Charles Mambo" required autocomplete="off">
         </div>
 
         <div class="form-control">
           <label for="Card number">Card Number</label>
-          <input type="number" name="number" id=""
-          placeholder="e.g. 1234 5678 9123 0000">
-          <p class="error-text">Wrong format, numbers only</p>
+          <input type="number" name="number" 
+          placeholder="e.g. 1234 5678 9123 0000" id="card_number">
+          <p id="card-error-message" class="error-text">Wrong format, numbers only</p>
         </div>
 
         <div class="date-container">
           <div class="form-control date">
             <label for="">Exp. Date</label>
-            <input type="number" name="number" id=""
+            <input type="number" name="number" id="exp_date"
             placeholder="MM">
-            <p class="error-text">Can`t be blank</p>
+            <p class="error-text exp-error-text">Can`t be blank</p>
           </div>
           <div class="form-control date">
             <label for="month">(MM/YY)</label>
-            <input type="number" name="number" id=""
+            <input type="number" name="number" id="exp_month"
             placeholder="YY">
             <p class="error-text">Can`t be blank</p>
           </div>
           <div class="form-control cvc">
             <label for="cvc">cvc</label>
-            <input type="number" name="number" id=""
+            <input type="number" name="number" id="cvc"
             placeholder="e.g. 123">
             <p class="error-text">Can`t be blank</p>
           </div>
@@ -83,6 +83,6 @@
 
   </div>
 
-
+<script src="index.js"></script>
 </body>
 </html>
